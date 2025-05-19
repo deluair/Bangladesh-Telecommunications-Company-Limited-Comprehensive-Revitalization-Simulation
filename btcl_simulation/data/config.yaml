@@ -1,0 +1,57 @@
+# Market Position Parameters
+market_position:
+  fixed_line_base: 500000  # Current fixed line subscribers
+  broadband_base: 0.12  # Current broadband market share
+  mobile_base: 0.0  # Current mobile market share
+  enterprise_base: 0.15  # Current enterprise market share
+  fixed_line_decline: -0.05  # Annual decline rate
+  broadband_growth: 0.15  # Annual growth rate
+  mobile_growth: 0.10  # Annual growth rate
+  enterprise_growth: 0.20  # Annual growth rate
+
+# Financial Parameters
+financial:
+  revenue_base: 1000  # Base revenue in crore Tk
+  employee_cost_ratio: 0.68  # Employee cost as % of revenue
+  other_opex_ratio: 0.25  # Other opex as % of revenue
+  capex_ratio: 0.15  # Capex as % of revenue
+  debt_base: 1500  # Base debt in crore Tk
+  interest_rate: 0.08  # Interest rate on debt
+  revenue_growth: -0.06  # Annual revenue growth
+  cost_reduction: 0.05  # Annual cost reduction
+  asset_utilization: 0.30  # Asset utilization ratio
+
+# Infrastructure Parameters
+infrastructure:
+  copper_network_base: 1000000  # Base copper network length (km)
+  fiber_network_base: 5000  # Base fiber network length (km)
+  dsl_ports_base: 200000  # Base DSL ports
+  ftth_ports_base: 50000  # Base FTTH ports
+  data_center_capacity_base: 100  # Base data center capacity (racks)
+  copper_to_fiber_conversion: 0.15  # Annual conversion rate
+  dsl_to_ftth_conversion: 0.20  # Annual conversion rate
+  data_center_expansion: 0.25  # Annual expansion rate
+  network_automation: 0.10  # Annual automation rate
+  fiber_deployment_cost: 500000  # Cost per km (Tk)
+  ftth_port_cost: 5000  # Cost per port (Tk)
+  data_center_rack_cost: 1000000  # Cost per rack (Tk)
+
+# Organizational Parameters
+organizational:
+  employee_base: 8500  # Base number of employees
+  avg_age_base: 48  # Base average age
+  digital_skills_base: 0.15  # Base digital skills ratio
+  operational_efficiency_base: 0.30  # Base operational efficiency
+  vrs_rate: 0.15  # Annual voluntary retirement rate
+  new_hiring_rate: 0.10  # Annual new hiring rate
+  digital_skills_growth: 0.20  # Annual digital skills growth
+  operational_efficiency_growth: 0.15  # Annual efficiency growth
+  avg_salary: 50000  # Average monthly salary (Tk)
+  vrs_package: 24  # VRS package in months
+  training_cost: 50000  # Annual training cost per employee (Tk)
+
+# Simulation Parameters
+simulation:
+  time_periods: 5  # Number of years to simulate
+  scenario: "focused_fiber"  # Simulation scenario
+  random_seed: 42  # Random seed for reproducibility 
